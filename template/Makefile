@@ -1,16 +1,16 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    MakefileTemplate                                   :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: albaud <albaud@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 18:46:11 by albaud            #+#    #+#              #
-#    Updated: 2023/04/11 12:47:43 by albaud           ###   ########.fr        #
+#    Updated: 2023/04/11 12:56:40 by albaud           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS 	= src/main.c src/table.c src/philosopher.c src/outputs.c src/ft_atoi.c src/lonly_life.c
+SRCS 	= $(wildcard srcs/*.c)
 OBJS 	= ${SRCS:.c=.o}
 NAME 	= main
 CC		= gcc
